@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+*{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background-color: #363636;
+    color: white;
+}
+
+.menu {
+    background-color: #5D478B;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    box-shadow: black 1px 2px 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 15px;
+    float: right;
+    text-align: center;
+}
+
+.menu a#cliHead:hover {
+    background-color: #CDB5CD;
+    color: #5D478B;
+}
+
+.menu a#prodHead:hover {
+    background-color: #CDB5CD;
+    color: #5D478B;
+}
+
+.menu a#titulo {
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    padding: 8px;
+}
+
+.menu a.ativo {
+  background-color:  #363636;
+  color: white;
+  border-top: #5D478B;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 10px;
+    text-align: center;
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: row;   
+}
+
+.form-cadastro label {
+    flex: none;
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.form-cadastro label.lblSettings {
+    text-align: right;
+    padding-right: 8px;
+    padding-left: 8px;
+    width: auto;
+}
+
+.form-cadastro .controle-in {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 8;
+    padding: 2px;
+    flex: 1 1 auto;
+}
+.form-cadastro button {
+    padding: 4px;
+    min-width: 80px;
+    background-color:white;
+    outline: inherit;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: #5D478B;
+    font-weight: bold;
+    color: #5D478B;
+    font-size: 15px;
+}
+
+.form-cadastro button:hover {
+    background-color: #5D478B;
+    color: white;
+    border-color: white;
+}
+
+.form fieldset {
+    border-style: hidden;
+}
+
+/*formatação table
+*/
+
+table.paleBlueRows {
+    border: 1px solid #363636;
+    text-align: center;
+    border-collapse: collapse;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 98%;
+  }
+  table.paleBlueRows td, table.paleBlueRows th {
+    border: 1px solid #363636;
+    padding: 3px 2px;
+    
+  }
+  table.paleBlueRows tbody td {
+    font-size: 12px;
+    
+  }
+  table.paleBlueRows tr:nth-child(even) {
+    background: #CDB5CD;
+  }
+  table.paleBlueRows thead {
+    background: #5D478B;
+    border-bottom: 5px solid #363636;
+  }
+  table.paleBlueRows thead th {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border-left: 2px solid #5D478B;
+    box-shadow: black 1px 2px 3px;
+    border-radius: 5px;
+  }
+  table.paleBlueRows thead th:first-child {
+    border-left: none;
+  }
+  
+  table.paleBlueRows tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    background: #CDB5CD;
+    border-top: 3px solid #444444;
+  }
+  table.paleBlueRows tfoot td {
+    font-size: 14px;
+  }
+
+  button#apagar {
+    padding: 4px;
+    min-width: 15px;
+    background-color:white;
+    outline: inherit;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: #5D478B;
+    font-size: 15px;
+  }
+
+  button#apagar:hover {
+    background-color: red;
+    color: white;
+    border-color: white;
+  }
+
+  button#editar {
+    padding: 4px;
+    min-width: 15px;
+    background-color:white;
+    outline: inherit;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: #5D478B;
+    font-size: 15px;
+  }
+
+  button#editar:hover {
+    background-color: green;
+    color: white;
+    border-color: white;
+  }
+  caption {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 10px;
+    text-align: center;
+  }

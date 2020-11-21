@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Interdisciplinar I</title>
+    <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="menu">
+        <a id="titulo">🖥️ Projeto Interdisciplinar</a>
+        <a href="produto.html" id="prodHead">Produtos</a>
+        <a class="ativo" href="#" id="cliHead">Clientes</a>
+        
+    </div>
+    <div class="form">
+        <form name="frmCliente">
+            <fieldset>
+                <legend>Cadastro de clientes</legend>
+                <div class="form-cadastro">
+                    <label>Código:</label>
+                    <input class="controle-in" type="number" maxlength="3" id="codigo"/>
+                    <label class="lblSettings">Nome/Razão Social: </label>
+                    <input class="controle-in" type="text" size="40px" id="nomeRazao"/>
+                    <label class="lblSettings">RG/IE</label>
+                    <input class="controle-in" type="number"  maxlength="9" id="rgie"/>
+                </div>
+                <div class="form-cadastro">
+                    <label>Endereço:</label>
+                    <input class="controle-in" type="text" size="40" id="endereco"/>
+                    <label class="lblSettings">Bairro:</label>
+                    <input class="controle-in" type="text" size="25px" id="bairro"/>
+                    <label class="lblSettings">Cidade:</label>
+                    <input class="controle-in" type="text" size="15px" id="cidade"/>
+                </div>
+                <div class="form-cadastro">
+                    <label>CEP:</label>
+                    <input class="controle-in" type="number" maxlength="8" id="cep"/>
+                    <label class="lblSettings">UF:</label>
+                    <input class="controle-in" type="text" maxlength="2" id="uf" size="10px"/>
+                    <label class="lblSettings">Telefone:</label>
+                    <input class="controle-in" type="number" maxlength="10" id="telefone"/>
+                    <label class="lblSettings">Celular:</label>
+                    <input class="controle-in" type="number" maxlength="11" id="celular"/>
+                    <label class="lblSettings">CPF/CNPJ:</label>
+                    <input class="controle-in" type="number" id="cpf"/>
+                </div>
+                <div class="form-cadastro">
+                    <label>Nome fantasia:</label>
+                    <input class="controle-in" type="text" size="30px" id="nomeFantasia"/>
+                    <label class="lblSettings">Contato:</label>
+                    <input class="controle-in" type="text" size="25px" id="contact"/>
+                    <label class="lblSettings">E-mail pessoal:</label>
+                    <input class="controle-in" type="text" size="15px" id="email"/>
+                    <label class="lblSettings">Nascimento:</label>
+                    <input class="controle-in" type="text" id="nascimento"/>
+                </div>
+                <div class="form-cadastro">
+                    <label>Observações:</label>
+                    <textarea class="controle-in" id="obs">
+                    </textarea>
+                </div>
+                <div class="form-cadastro">
+                    <label></label>
+                    <button id="salvar">Salvar</button>
+                </div>
+               
+            </fieldset>
+        </form>
+    </div>
+    <div id="listagem">
+
+    </div>
+    <script src="cliente.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Interdisciplinar I</title>
+    <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="menu">
+        <a id="titulo">🖥️ Projeto Interdisciplinar</a>
+        <a class="ativo href="produto.html" id="prodHead">Produtos</a>
+        <a href="index.html" id="cliHead">Clientes</a>
+        
+    </div>
+    <div class="form">
+        <form name="frmCliente">
+            <fieldset>
+                <legend>Cadastro de clientes</legend>
+                <div class="form-cadastro">
+                    <label>Código:</label>
+                    <input class="controle-in" type="number" maxlength="3" id="codigo"/>
+                </div>
+                <div class="form-cadastro">
+                    <label>Nome:</label>
+                    <input class="controle-in" type="text" size="40" id="nome"/>
+                </div>
+                <div class="form-cadastro">
+                    <label>Preço custo:</label>
+                    <input class="controle-in" type="number" maxlength="8" id="precoCusto"/>
+                    <label class="lblSettings">Lucro %</label>
+                    <input disabled class="controle-in" type="number" id="lucro"/>
+                    <label class="lblSettings">Preço de venda:</label>
+                    <input class="controle-in" type="number" id="precoVenda"/>
+                </div>
+                <div class="form-cadastro">   
+                    <label>ICMS %</label>
+                    <input disabled class="controle-in" type="number" id="icms"/>
+                    <label></label>
+                    <label></label>
+                    <label></label>
+                    <label></label>
+                    <label class="lblSettings">NCM - NFE:</label>
+                    <input class="controle-in" type="number" id="ncm"/>
+                    <label class="lblSettings">Unidade de medida:</label>
+                    <input class="controle-in" type="text" maxlength="3" size="10px" list="unidade" id="unMedida"/>
+                        <datalist id="unidade">
+                            <option>UN</option>
+                            <option>KG</option>
+                            <option>M</option>
+                        </datalist>
+                </div>
+                <div class="form-cadastro">
+                    <label>Marca:</label>
+                    <input class="controle-in" type="text" id="marca" list="tipos"/>
+                        <datalist id="tipos">
+                            <option>LENOVO</option>
+                            <option>SAMSUNG</option>
+                            <option>POSITIVO</option>
+                            <option>DELL</option>
+                            <option>APPLE</option>
+                        </datalist>
+                        <label class="lblSettings">Categoria:</label>
+                        <input class="controle-in" type="text" id="categoria" list="secoes"/>
+                            <datalist id="secoes">
+                                <option>Eletrônicos</option>
+                                <option>Móveis</option>
+                                <option>Elétrodomésticos</option>
+                                <option>Construção</option>
+                            </datalist>
+                </div>
+                <div class="form-cadastro">
+                    <label>Origem</label>
+                    <select class="controle-in" id="origem">
+                        <option>Estadual</option>
+                        <option>Nacional</option>
+                        <option>Internacional</option>
+                    </select>
+                    <label class="lblSettings">Código de barras:</label>
+                    <input type="number" class="controle-in" id="codigoBarras" placeholder="(passe o produto pelo leitor)"/>
+                </div>
+                <div class="form-cadastro">
+                    <label></label>
+                    <button id="salvar">Salvar</button>
+                </div>
+               
+            </fieldset>
+        </form>
+    </div>
+    <div id="listagem">
+
+    </div>
+    <script src="produtos.js"></script>
+</body>
+</html>
+
